@@ -20,100 +20,70 @@
 <br/>
 <section id="about" class="section">
 <div class="info"><h2><span>About Me</span></h2>
-  <h6>About Me</h6><br>
+
+
+  <p><b> .ויליאם הנרי "ביל" גייטס השלישי הוא יזם, איל הון, משקיע, סופר ונדבן אמריקאי</b></p>
+  <p><b>.בשנת 1975, גייטס ופול אלן ייסדו את מיקרוסופט, שהפכה לחברת התוכנה הגדולה בעולם</b></p>
+  <p><b>.במהלך הקריירה שלו במיקרוסופט, גייטס מילא את תפקידי היו"ר, המנכ"ל ואדריכל התוכנה הראשי, והיה בעל המניות הגדול ביותר עד מאי 2014</b></p>
+  <p><b>.מאז 1987, גייטס נכלל ברשימת האנשים העשירים בעולם של פורבס, והיה העשיר ביותר במשך שנים רבות לסירוגין. בדצמבר 2021 הוערך הונו במעל 139 מיליארד דולר</b></p>
+  <p><b>למידע נוסף <a href="https://he.wikipedia.org/wiki/%D7%91%D7%99%D7%9C_%D7%92%D7%99%D7%99%D7%98%D7%A1">לחץ כאן</a></b></p>
 </div>
-<br/>
-<br/>
-<br/>
 </section>
 
 <section id="photos" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
+
 <br/>
 <div class="info"><h2><span>My Photos</span></h2><br>
+  
+  <img src="photo1.jpg" alt="photo1" height="300px" width="200px">
+  <img src="photo2.jpg" alt="photo2" height="200px" width="300px">
+  <img src="photo3.jpg" alt="photo3" height="200px" width="300px">
+  <img src="photo4.jpg" alt="photo4" height="300px" width="200px">
 <br/>
 <br/>
 <br/>
 </section>
 
 <section id="playlist" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
 <br/>
 <br/>
 <div class="info"><h2><span>My Playlist</span></h2><br>
+  <iframe width="420" height="315"
+src="https://www.youtube.com/embed/vSxzC8utEe8">
+</iframe>
+<iframe width="420" height="315"
+src="https://www.youtube.com/embed/dSjPV6MszEg">
+</iframe>
 <br/>
 <br/>
 <br/>
 </section>
 
 <section id="like" class="section">
+
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
-<br/>
+<div class="info"><h2><span>Like My Page</span></h2><br>
+
+<div>
+    <center><h3 id="counter-label">0</h3></center>
+</div>
+<center>
+    <div>
+        <button onclick="incrementClick()">Like</button>
+    </div>
+</center><br/>
 <br/>
 <br/>
 </section>
 
 <section id="qrcoder" class="section">
+
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-scan my code
+<div class="info"><h2><span>Scan My Code</span></h2><br>
+
 <br/>
 <br/>
 <br/>
@@ -179,5 +149,19 @@ $(function(){
     $('#menu').toggle($(this).scrollTop()>1000)
  });​
  </script>
+
+
+ <script>var counterVal = 0;
+
+  function incrementClick() {
+      updateDisplay(++counterVal);
+  }
+  
+
+  
+  function updateDisplay(val) {
+      document.getElementById("counter-label").innerHTML = val;
+  }
+  </script>
 </body>
 </html>
