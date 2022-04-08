@@ -109,9 +109,32 @@ src="https://www.youtube.com/embed/dSjPV6MszEg">
 
 <div class="info"><h2><span>Contact Me</span></h2><br>
 
+
+  
+  <form action="mailto:bill.gates@microsoft.com" method="post" enctype="text/plain">
+    <div>
+    </div>
+    <div>
+      <label for="email">Enter your Email:<br>
+        <input type="text" name="email" id="email" />
+      </label>
+    </div>
+    <div>
+      <label>Enter your Comments:</label>
+      <br />
+      <textarea name="comments" rows="12" cols="35"></textarea>
+    </div>
+    <div>
+      <input type="submit" name="submit" value="Send" />
+      <input type="reset" name="reset" value="Clear Form" />
+    </div>
+  </form>
+
 <br/>
 <br/>
 <br/>
+
+
 </section>
 
 
@@ -141,6 +164,11 @@ $(function(){
   function updateDisplay(val) {
       document.getElementById("counter-label").innerHTML = val;
   }
+
+
+
+
+
   </script>
 </body>
 </html>
