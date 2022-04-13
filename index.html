@@ -2,6 +2,17 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="style.css" />
+<script src="https://cdn.tiny.cloud/1/flu9sy0dtwbxgguzgbkgj4dtdaz7h1m4hcu6xgds4tmdht7y/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+<script>
+    tinymce.init({
+      selector: "#smile",
+      plugins: "emoticons",
+      toolbar: "emoticons",
+      toolbar_location: "bottom",
+      menubar: false
+      
+    });
+  </script>
 </head>
 <body>
   <div class="topnav">
@@ -128,7 +139,7 @@ src="https://www.youtube.com/embed/dSjPV6MszEg">
     <div>
       <label>Enter your Comments:</label>
       <br />
-      <textarea name="comments" rows="12" cols="35"></textarea>
+      <textarea id="smile" name="comments" rows="12" cols="35"></textarea>
     </div>
     <div>
       <input type="submit" name="submit" value="Send" />
@@ -174,6 +185,7 @@ $(function(){
 
 
   </script>
+
 
 
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v13.0" nonce="ns053hdH"></script>
